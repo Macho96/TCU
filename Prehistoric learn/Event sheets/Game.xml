@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game</name>
+    <events>
+        <variable constant="0" name="Score" sid="548048408475742" static="0" type="number">1000</variable>
+        <variable constant="0" name="Answer" sid="122424377625436" static="0" type="text"></variable>
+        <event-block sid="618938736005953">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="493775743238403" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="596723457678878" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="680945656754281" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set text" sid="385447652878344" type="txtData">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score&amp;&quot; points&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
